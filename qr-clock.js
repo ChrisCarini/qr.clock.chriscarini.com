@@ -15,7 +15,7 @@ const currentQrClockTime = () => {
 
     const time_str = `It is currently ${time}.`.replaceAll(" ", "%20");
 
-    return `https://chart.googleapis.com/chart?cht=qr&chs=450x450&chl=${time_str}&choe=UTF-8`;
+    return `https://quickchart.io/qr?size=450x450&ecLevel=H&text=${time_str}`;
 }
 
 const updateClock = () => {
